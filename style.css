@@ -1,0 +1,232 @@
+html, body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+div {
+  display: block;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/*Desktop*/
+
+@media only screen and (min-width:1024px){
+  .shortmenu {
+    display: none;
+  }
+
+  .mobilewhitebox {
+    display: none;
+  }
+}
+
+/*Tablet*/
+
+@media only screen and (max-width:1024px) {
+  .shortmenu {
+    display: none;
+  }
+
+  .mobilewhitebox {
+    display: none;
+  }
+
+  .aspect.exam, .product.fitting, .aspect.delivery {
+    width: 47%;
+  }
+}
+
+/*Phone*/
+
+@media only screen and (max-width:470px) {
+  .menu {
+    display: none;
+  }
+
+  .aspect {
+    width: 90%;
+  }
+
+  .container {
+    width: 470px;
+    display: inline-block;
+  }
+
+  .mainbanner {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15rem !important;
+  }
+
+  .whitebox {
+    display: none;
+  }
+
+  .mobilewhitebox {
+    display: block;
+
+  }
+
+  .mobilewhitebox h1 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+/*Header Top*/
+
+nav {
+  background-color: cadetblue;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 4.5rem;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+ul {
+  margin-right: 1rem;
+}
+
+ul li {
+  display: inline;
+  padding: 0px 1rem;
+}
+
+nav a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/*Main Banner - Photo, Blackbox text, etc*/
+
+.mainbanner {
+  display: flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30em;
+}
+
+.whitebox {
+  background-color: white;
+  color: black;
+  padding: 1.5rem 5rem;
+  position: absolute;
+  top: 13em;
+  right: 3rem;
+}
+
+.mobilewhitebox {
+background-color: white;
+width: 100%;
+color: black;
+position: relative;
+top: 3.5rem;
+margin: 0.5rem;
+}
+
+.whitebox h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+/*Wares*/
+
+.aspects {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em;
+}
+
+.aspect {
+  width: 30%;
+}
+
+.image {
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0px;
+}
+
+.image img {
+  max-width: 8em;
+}
+
+img {
+  border-style: none;
+}
+
+.description {
+  display: block;
+
+  color: black;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/*Location and Hours*/
+
+.shop-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 0 0 0;
+}
+
+.box {
+  width: 35%;
+}
+
+.box .title {
+  width: 10rem;
+  display: block;
+  background-color: cadetblue;
+  color: white;
+  padding: 1em 2em;
+  margin-bottom: 1rem;
+}
+
+/*Footer*/
+
+footer {
+  background-color: azure;
+  color: black;
+  padding: 5em;
+  margin-top: 4em;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+footer .container {
+  align-items: center;
+  justify-content: center;
+}
+
+footer span {
+  font-size: 1rem;
+}
