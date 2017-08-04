@@ -47,6 +47,11 @@ nav {
   margin-top: 1rem;
 }
 
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -78,7 +83,7 @@ nav {
   background-color: white;
   text-transform: uppercase;
   position: relative;
-  left: 2rem;
+  right: 2rem;
   display: block;
 }
 
@@ -156,8 +161,8 @@ nav {
   .container > * {
     max-width: 100%;
   }
-  
-  nav {
+
+  .navigation {
     margin-top: 0;
   }
 
