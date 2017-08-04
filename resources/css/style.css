@@ -2,7 +2,7 @@ html {
   font-size: 18px;
   line-height: 1.4;
   width: 100%;
-  font-family: Helvetica;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1 {
@@ -156,8 +156,8 @@ nav {
   .container > * {
     max-width: 100%;
   }
-
-  .navigation {
+  
+  nav {
     margin-top: 0;
   }
 
