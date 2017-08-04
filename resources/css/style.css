@@ -1,115 +1,169 @@
-html, body {
+/*Desktop*/
+
+@media only screen and (min-width:1024px){
+  .banner {
+    margin: 0rem 5rem 0 5rem;
+  }
+
+  .alt_menu {
+    display: none;
+  }
+
+}
+
+/*Tablet*/
+
+@media only screen and (max-width:1024px){
+  .container {
+  width: 100%;
+  margin: 0px;
+  }
+
+  .header {
+    height: 22rem;
+    background-image: url(../images/glasses-bg.png);
+    background-size: cover;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  nav {
+    margin-top: 0px;
+  }
+
+  .alt_menu {
+      display: none;
+  }
+
+  .ad {
+    left: 0;
+    position: static;
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+
+  .header {
+    height: 22rem;
+    background-position: 30%;
+  }
+
+
+  }
+
+/*Phone*/
+
+@media only screen and (max-width:470px) {
+  .logo span {
+    display: none;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 1.5rem;
+    margin: 1rem 1rem 1rem 2rem;
+  }
+
+  .container {
+  width: 470px;
+
+  display: inline-block;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 0px;
+    top: 0px;
+  }
+
+  .copyright span {
+    display: none;
+  }
+
+  .content {
+    margin-top: 3.77rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 25.5rem;
+  }
+
+  .points {
+    margin-top: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .point_item {
+    width: 100%;
+  }
+
+}
+
+/******/
+
+html {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   line-height: 1.4;
 }
 
-div {
+div, body {
   display: block;
+}
+
+.main {
+  width: 100%;
 }
 
 .container {
   max-width: 960px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*Desktop*/
-
-@media only screen and (min-width:1024px){
-  .shortmenu {
-    display: none;
-  }
-
-  .mobilewhitebox {
-    display: none;
-  }
+.header {
+  height: 30rem;
+  background-image: url(../images/glasses-bg.png);
+  background-size: cover;
 }
 
-/*Tablet*/
-
-@media only screen and (max-width:1024px) {
-  .shortmenu {
-    display: none;
-  }
-
-  .mobilewhitebox {
-    display: none;
-  }
-
-  .aspect.exam, .product.fitting, .aspect.delivery {
-    width: 47%;
-  }
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-
-/*Phone*/
-
-@media only screen and (max-width:470px) {
-  .menu {
-    display: none;
-  }
-
-  .aspect {
-    width: 90%;
-  }
-
-  .container {
-    width: 470px;
-    display: inline-block;
-  }
-
-  .mainbanner {
-    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 15rem !important;
-  }
-
-  .whitebox {
-    display: none;
-  }
-
-  .mobilewhitebox {
-    display: block;
-
-  }
-
-  .mobilewhitebox h1 {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-}
-
-/*Header Top*/
 
 nav {
+  width: 100%;
   background-color: cadetblue;
-  padding: 1rem;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  top: 4.5rem;
-}
-
-nav div {
-  display: flex;
-  align-items: center;
-}
-
-nav img {
-  height: 1.5rem;
-  margin-left: 2rem;
-  margin-right: 1rem;
-}
-
-ul {
-  margin-right: 1rem;
-}
-
-ul li {
-  display: inline;
-  padding: 0px 1rem;
 }
 
 nav a:link, a:visited {
@@ -117,116 +171,123 @@ nav a:link, a:visited {
   text-decoration: none;
 }
 
-/*Main Banner - Photo, Blackbox text, etc*/
-
-.mainbanner {
+.logo {
   display: flex;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 30em;
+  align-items: center;
 }
 
-.whitebox {
+.logo img {
+  height: 1.5rem;
+  margin: 0 1rem 0 2rem;
+}
+
+.menu {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.menu li {
+  margin-right: 2rem;
+}
+
+.alt_menu {
+  display: none;
+  margin: 1rem 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.ad {
+  margin-top: 10rem;
+  padding: 1.5rem 2rem;
   background-color: white;
-  color: black;
-  padding: 1.5rem 5rem;
-  position: absolute;
-  top: 13em;
-  right: 3rem;
+  text-transform: uppercase;
+  position: relative;
+  right: 2rem;
+  display: block;
 }
 
-.mobilewhitebox {
-background-color: white;
-width: 100%;
-color: black;
-position: relative;
-top: 3.5rem;
-margin: 0.5rem;
-}
-
-.whitebox h1 {
-  font-weight: bold;
+h1 {
   font-size: 2rem;
-  margin: 0.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
 }
 
-/*Wares*/
+.content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.aspects {
+.gallery {
   display: flex;
   justify-content: space-between;
-  margin: 3em;
+  width: 25.5rem;
 }
 
-.aspect {
-  width: 30%;
-}
-
-.image {
-  height: 9em;
+.gallery_item {
+  height: 8rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2em 0px;
-}
-
-.image img {
-  max-width: 8em;
-}
-
-img {
-  border-style: none;
-}
-
-.description {
-  display: block;
-
-  color: black;
-  text-align: center;
-  padding: 0.5em;
-}
-
-/*Location and Hours*/
-
-.shop-info {
-  display: flex;
+  flex-direction: column;
+  max-width: 5rem;
   justify-content: space-around;
-  margin: 3em 0 0 0;
-}
-
-.box {
-  width: 35%;
-}
-
-.box .title {
-  width: 10rem;
-  display: block;
-  background-color: cadetblue;
-  color: white;
-  padding: 1em 2em;
-  margin-bottom: 1rem;
-}
-
-/*Footer*/
-
-footer {
-  background-color: azure;
-  color: black;
-  padding: 5em;
-  margin-top: 4em;
-}
-
-footer img {
-  height: 1.5rem;
-  margin-right: 0.75rem;
-}
-
-footer .container {
   align-items: center;
-  justify-content: center;
 }
 
-footer span {
-  font-size: 1rem;
+.vertical {
+  width: 3.5rem;
+}
+
+.horizontal {
+  width: 5rem;
+}
+
+.points {
+  margin-top: 3rem;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.point_item {
+  width: 46.5%;
+}
+
+.point_heading {
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+}
+
+p {
+  display: block;
+}
+
+.footer {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.copyright {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.copyright img {
+  height: 1.5rem;
+  margin: 4rem 1rem;
 }
